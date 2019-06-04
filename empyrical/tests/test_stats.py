@@ -773,7 +773,7 @@ class TestStats(BaseTestCase):
 
             assert_almost_equal(
                 observed,
-                intercept * 252,
+                intercept * 365,
                 DECIMAL_PLACES
             )
 
@@ -810,11 +810,11 @@ class TestStats(BaseTestCase):
         # Alpha should change proportionally to how much returns were
         # translated.
         assert_almost_equal(
-            (alpha_standard - alpha_depressed)/252,
+            (alpha_standard - alpha_depressed)/365,
             translation,
             DECIMAL_PLACES)
         assert_almost_equal(
-            (alpha_raised - alpha_standard)/252,
+            (alpha_raised - alpha_standard)/365,
             translation,
             DECIMAL_PLACES)
         # Beta remains constant.

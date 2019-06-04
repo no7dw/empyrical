@@ -157,7 +157,7 @@ def annualization_factor(period, annualization):
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -413,7 +413,7 @@ def annual_return(returns, period=DAILY, annualization=None):
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -455,7 +455,7 @@ def cagr(returns, period=DAILY, annualization=None):
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -495,7 +495,7 @@ def annual_volatility(returns,
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     alpha : float, optional
         Scaling relation (Levy stability exponent).
@@ -552,7 +552,7 @@ def calmar_ratio(returns, period=DAILY, annualization=None):
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -662,7 +662,7 @@ def sharpe_ratio(returns,
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -738,7 +738,7 @@ def sortino_ratio(returns,
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -821,7 +821,7 @@ def downside_risk(returns,
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -1019,7 +1019,7 @@ def alpha_beta(returns,
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -1105,7 +1105,7 @@ def alpha_beta_aligned(returns,
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -1170,7 +1170,7 @@ def alpha(returns,
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -1239,7 +1239,7 @@ def alpha_aligned(returns,
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     annualization : int, optional
         Used to suppress default values available in `period` to convert
@@ -1531,7 +1531,7 @@ def capture(returns, factor_returns, period=DAILY):
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     Returns
     -------
@@ -1566,7 +1566,7 @@ def up_capture(returns, factor_returns, **kwargs):
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     Returns
     -------
@@ -1600,7 +1600,7 @@ def down_capture(returns, factor_returns, **kwargs):
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     Returns
     -------
@@ -1634,7 +1634,7 @@ def up_down_capture(returns, factor_returns, **kwargs):
 
             'monthly':12
             'weekly': 52
-            'daily': 252
+            'daily': 365
 
     Returns
     -------
