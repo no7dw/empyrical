@@ -587,7 +587,7 @@ def calmar_ratio(returns, period=DAILY, annualization=None):
     return temp
 
 
-def omega_ratio(returns, risk_free=0.0, required_return=0.0,
+def omega_ratio(returns, risk_free=0.03, required_return=0.0,
                 annualization=APPROX_BDAYS_PER_YEAR):
     """Determines the Omega ratio of a strategy.
 
@@ -994,7 +994,7 @@ def _aligned_series(*many_series):
 
 def alpha_beta(returns,
                factor_returns,
-               risk_free=0.0,
+               risk_free=0.03,
                period=DAILY,
                annualization=None,
                out=None):
@@ -1076,7 +1076,7 @@ def roll_alpha_beta(returns, factor_returns, window=10, **kwargs):
 
 def alpha_beta_aligned(returns,
                        factor_returns,
-                       risk_free=0.0,
+                       risk_free=0.03,
                        period=DAILY,
                        annualization=None,
                        out=None):
@@ -1144,7 +1144,7 @@ roll_alpha_beta_aligned = _create_binary_vectorized_roll_function(
 
 def alpha(returns,
           factor_returns,
-          risk_free=0.0,
+          risk_free=0.03,
           period=DAILY,
           annualization=None,
           out=None,
@@ -1209,7 +1209,7 @@ roll_alpha = _create_binary_vectorized_roll_function(alpha)
 
 def alpha_aligned(returns,
                   factor_returns,
-                  risk_free=0.0,
+                  risk_free=0.03,
                   period=DAILY,
                   annualization=None,
                   out=None,
@@ -1294,7 +1294,7 @@ def alpha_aligned(returns,
 roll_alpha_aligned = _create_binary_vectorized_roll_function(alpha_aligned)
 
 
-def beta(returns, factor_returns, risk_free=0.0, out=None):
+def beta(returns, factor_returns, risk_free=0.03, out=None):
     """Calculates beta.
 
     Parameters
@@ -1332,7 +1332,7 @@ def beta(returns, factor_returns, risk_free=0.0, out=None):
 roll_beta = _create_binary_vectorized_roll_function(beta)
 
 
-def beta_aligned(returns, factor_returns, risk_free=0.0, out=None):
+def beta_aligned(returns, factor_returns, risk_free=0.03, out=None):
     """Calculates beta.
 
     If they are pd.Series, expects returns and factor_returns have already
